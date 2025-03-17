@@ -32,9 +32,49 @@
 
         <!-- Main content (empty for now) -->
         <main class="content">
-            <!-- The right side is intentionally empty for now -->
+            <section>
+                <h2>Sette opp en DNS-server</h2>
+                
+                <p>En <strong>DNS-server</strong> (Domain Name System) oversetter domenenavn til IP-adresser, slik at vi kan bruke enkle nettadresser i stedet for tallkoder. For eksempel oversetter en DNS-server <code>www.google.com</code> til en IP-adresse som <code>142.250.74.78</code>.</p>
+                
+                <h3>Steg 1: Legg til en DNS-server</h3>
+                <ul>
+                    <li>Gå til <strong>End Devices</strong> og dra en <strong>server</strong> til arbeidsflaten.</li>
+                    <li>Koble serveren til en <strong>switch</strong> eller direkte til en ruter med en <strong>straight-through Ethernet-kabel</strong>.</li>
+                </ul>
+                
+                <h3>Steg 2: Konfigurere DNS-tjenesten</h3>
+                <ul>
+                    <li>Klikk på serveren og gå til fanen <strong>Services</strong>.</li>
+                    <li>Velg <strong>DNS</strong> fra listen over tjenester.</li>
+                    <li>Aktiver DNS ved å sette <strong>Service: ON</strong>.</li>
+                    <li>Legg til et nytt domenenavn og IP-adresse:</li>
+                    <ul>
+                        <li><strong>Navn:</strong> <code>minside.local</code></li>
+                        <li><strong>IP-adresse:</strong> <code>192.168.1.10</code></li>
+                    </ul>
+                    <li>Klikk på <strong>Add</strong> for å lagre innstillingen.</li>
+                </ul>
             
+                <h3>Steg 3: Konfigurere PC-er til å bruke DNS</h3>
+                <ul>
+                    <li>Gå til en PC og åpne <strong>Desktop → IP Configuration</strong>.</li>
+                    <li>Under <strong>DNS Server</strong>, skriv inn DNS-serverens IP-adresse: <code>192.168.1.10</code>.</li>
+                </ul>
+            
+                <h3>Steg 4: Test DNS-oppsettet</h3>
+                <ul>
+                    <li>Åpne <strong>Command Prompt</strong> på en PC.</li>
+                    <li>Skriv inn kommandoen: <code>nslookup minside.local</code></li>
+                    <li>Hvis alt fungerer, vil du få tilbake IP-adressen til DNS-serveren.</li>
+                </ul>
+            </section>
+            <h1>Rask gjennomgang video</h1>
+            <video src="Untitled video - Made with Clipchamp (2).mp4" controls>
+                Your browser does not support the video tag.
+              </video>
         </main>
     </div>
+
 </body>
 </html>
