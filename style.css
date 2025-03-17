@@ -3,6 +3,7 @@ html, body {
     height: 100%;
     margin: 0; /* Remove default browser margin */
 }
+
 /* Reset some default styling */
 * {
     margin: 0;
@@ -87,6 +88,7 @@ html, body {
     height: 100%;
     
     
+    
 }
 
 /* Center content styling for specific pages */
@@ -128,13 +130,132 @@ html, body {
     font-size: 20px;
     
 }
+
+h1{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Hovedfunksjoner{
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+.h4{
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .content h3{
     margin: 20px;
    
 }
 footer{
-    color: #ffffff;
-    background-color: rgb(0, 0, 0);
+    color: #000000;
     margin-bottom: 0%;
-    position: relative;
+    position: static;
 }
+
+
+
+
+/* Ensure content area has proper spacing */
+.content {
+    padding: 30px;
+    width: 95%;
+    background-color: #fff;
+    margin-left: 30%;
+}
+
+/* Ensure headings are properly spaced */
+h1 {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px; /* Adds space below h1 */
+    display: block; /* Ensures it's on its own line */
+}
+
+/* Section headings */
+h2 {
+    font-size: 28px;
+    color: #0056b3;
+    border-bottom: 3px solid #1e3edb; /* Blue accent */
+    padding-bottom: 5px;
+    margin-top: 20px; /* Ensures spacing between h1 and h2 */
+    display: block; /* Ensures it does not overlap with h1 */
+}
+
+
+/* Bullet point lists */
+ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    font-size: 20px;
+    color: #000;
+}
+
+/* Styling for each bullet point */
+li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Highlight important words */
+li strong {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Code styling for commands */
+code {
+    background: #eee;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 18px;
+}
+
+/* Add spacing around sections */
+section {
+    margin-bottom: 40px;
+}
+
+video{
+    height: 90%;
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-bottom: 80px;
+    border: solid;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .content {
+        width: 100%;
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    ul {
+        font-size: 18px;
+        padding-left: 20px;
+    }
+}
+
+
+
+
+
+
